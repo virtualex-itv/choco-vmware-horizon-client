@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>vmware-horizon-client</id>
+    <version>5.1.0</version>
+	<packageSourceUrl>https://github.com/virtualex-itv/choco-vmware-horizon-client/tree/master</packageSourceUrl>
+    <owners>virtualex windos medalibi</owners>
+    <title>VMware Horizon Client</title>
+    <authors>VMware, Inc.</authors>
+    <projectUrl>https://clients.amazonworkspaces.com/</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/virtualex-itv/choco-vmware-horizon-client/dd0f0b2f4f1eeabd0446309ccd55e03f315cb17d/_icon/ViewClientIcon.png</iconUrl>
+    <copyright>Copyright © 2019 VMware, Inc.  All rights reserved.</copyright>
+    <licenseUrl>https://www.vmware.com/help/legal.html</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+	<docsUrl>https://docs.vmware.com/en/VMware-Horizon-Client/index.html</docsUrl>
+  <mailingListUrl>https://communities.vmware.com/community/vmtn/horizon/view/client_for_windows</mailingListUrl>
+    <tags>vmware horizon view client virtual-machine vdi admin</tags>
+    <summary>Client application used to connect to virtual desktops from Windows desktop computers.</summary>
+    <description>
+      VMware Horizon Client for Windows makes it easy to access your Windows virtual desktop with the best possible user experience on the Local Area Network (LAN) or across a Wide Area Network (WAN). Support for Windows 10, Windows 8 and 8.1 (with Updates), and Windows 7.
+      ---
+      ![ChocoTestEnvInstall](https://rawcdn.githack.com/virtualex-itv/choco-vmware-horizon-client/15f4f57b446a9eeb77b5bca88c20c8e7636ff695/_img/choco-vmw-horizon-test.png)
+      ---
+    </description>
+    <releaseNotes>
+      **Note:**
+      The **4.6.1** release of Horizon Client for Windows included a new command-line installation property called AUTO_UPDATE_ENABLED. This property determines whether the online update feature is enabled in Horizon Client for Windows. A value of 1 enables the feature. A value of 0 disables the feature.
+      ---
+      The **5.1.0** release of Horizon Client for Windows contains the following new features:
+
+      * Enhanced drag and drop features
+        * Users can drag and drop text, rich text, HTML, images, and file contents between the client system and remote desktops and published applications. The enhanced drag and drop features require Horizon Agent 7.9. A Horizon administrator can use group policy settings or Smart Policies to configure drag and drop behavior. See Dragging and Dropping.
+      * Install desktop and application shortcuts when Horizon Client starts
+        * A new vmware-view command-line option, -installShortcutsThenQuit, enables you to install desktop and application shortcuts that are configured on the server when you start Horizon Client. When you use this command-line option, Horizon Client connects to the server silently, installs the shortcuts, and then quits. See Horizon Client Command Use.
+      * Windows 10 Education support
+        * You can install Horizon Client for Windows on a client system that is running the Education edition of Windows 10.
+      * Serial port redirection support in nested mode
+        * Serial port redirection is now supported in nested mode. See VMware Knowledge Base (KB) article 67248, "VMware Horizon Guidelines for Nested Mode."
+      * Device filtering with client drive redirection
+        * An administrator can include or exclude folders on devices that have specified vendor and product IDs from being redirected by using the Include Vid/Pid Device and Exclude Vid/Pid Device agent group policy settings. This feature requires Horizon Agent 7.9. See Client Drive Redirection Policy Settings.
+      * Multiple monitor support changes
+        * Updated Windows display specifications require Windows 10 version 1803 or later for six monitor support on Horizon 7 version 7.9 and later. See Supported Multiple Monitor Configurations.
+      * [Full Release Notes](https://docs.vmware.com/en/VMware-Horizon-Client-for-Windows/5.1/rn/horizon-client-windows-51-release-notes.html)
+    </releaseNotes>
+    <dependencies>
+  	  <dependency id="vcredist2015" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
