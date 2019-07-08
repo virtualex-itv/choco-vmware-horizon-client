@@ -9,7 +9,7 @@
     <title>VMware Horizon Client</title>
     <authors>VMware, Inc.</authors>
     <projectUrl>https://clients.amazonworkspaces.com/</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/virtualex-itv/choco-vmware-horizon-client/dd0f0b2f4f1eeabd0446309ccd55e03f315cb17d/_icon/ViewClientIcon.png</iconUrl>
+    <iconUrl>https://rawcdn.githack.com/virtualex-itv/choco-vmware-horizon-client/5859664907bf4c1d30fb71ab4e5a9a831ce9bfea/_icon/ViewClientIcon.png</iconUrl>
     <copyright>Copyright © 2019 VMware, Inc.  All rights reserved.</copyright>
     <licenseUrl>https://www.vmware.com/help/legal.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
