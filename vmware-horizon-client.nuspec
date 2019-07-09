@@ -17,16 +17,7 @@
   <mailingListUrl>https://communities.vmware.com/community/vmtn/horizon/view/client_for_windows</mailingListUrl>
     <tags>vmware horizon view client virtual-machine vdi admin</tags>
     <summary>Client application used to connect to virtual desktops from Windows desktop computers.</summary>
-    <description>
-      VMware Horizon Client for Windows makes it easy to access your Windows virtual desktop with the best possible user experience on the Local Area Network (LAN) or across a Wide Area Network (WAN). Support for Windows 10, Windows 8 and 8.1 (with Updates), and Windows 7.
-
-      ---
-
-      ![ChocoTestEnvInstall](https://rawcdn.githack.com/virtualex-itv/choco-vmware-horizon-client/15f4f57b446a9eeb77b5bca88c20c8e7636ff695/_img/choco-vmw-horizon-test.png)
-
-      ---
-
-    </description>
+    <description>VMware Horizon Client for Windows makes it easy to access your Windows virtual desktop with the best possible user experience on the Local Area Network (LAN) or across a Wide Area Network (WAN). Support for Windows 10, Windows 8 and 8.1 (with Updates), and Windows 7.</description>
     <releaseNotes>
       **Note:**
       The **4.6.1** release of Horizon Client for Windows included a new command-line installation property called AUTO_UPDATE_ENABLED. This property determines whether the online update feature is enabled in Horizon Client for Windows. A value of 1 enables the feature. A value of 0 disables the feature.
