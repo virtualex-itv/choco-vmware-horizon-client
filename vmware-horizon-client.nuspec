@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vmware-horizon-client</id>
-    <version>5.1.0</version>
+    <version>5.2.0</version>
 	<packageSourceUrl>https://github.com/virtualex-itv/choco-vmware-horizon-client/tree/master</packageSourceUrl>
     <owners>virtualex windos medalibi</owners>
     <title>VMware Horizon Client</title>
@@ -22,21 +22,35 @@
       **Note:**
       The **4.6.1** release of Horizon Client for Windows included a new command-line installation property called AUTO_UPDATE_ENABLED. This property determines whether the online update feature is enabled in Horizon Client for Windows. A value of 1 enables the feature. A value of 0 disables the feature.
       ---
-      The **5.1.0** release of Horizon Client for Windows contains the following new features:
-
-      * Enhanced drag and drop features
-        * Users can drag and drop text, rich text, HTML, images, and file contents between the client system and remote desktops and published applications. The enhanced drag and drop features require Horizon Agent 7.9. A Horizon administrator can use group policy settings or Smart Policies to configure drag and drop behavior. See Dragging and Dropping.
-      * Install desktop and application shortcuts when Horizon Client starts
-        * A new vmware-view command-line option, -installShortcutsThenQuit, enables you to install desktop and application shortcuts that are configured on the server when you start Horizon Client. When you use this command-line option, Horizon Client connects to the server silently, installs the shortcuts, and then quits. See Horizon Client Command Use.
-      * Windows 10 Education support
-        * You can install Horizon Client for Windows on a client system that is running the Education edition of Windows 10.
-      * Serial port redirection support in nested mode
-        * Serial port redirection is now supported in nested mode. See VMware Knowledge Base (KB) article 67248, "VMware Horizon Guidelines for Nested Mode."
-      * Device filtering with client drive redirection
-        * An administrator can include or exclude folders on devices that have specified vendor and product IDs from being redirected by using the Include Vid/Pid Device and Exclude Vid/Pid Device agent group policy settings. This feature requires Horizon Agent 7.9. See Client Drive Redirection Policy Settings.
-      * Multiple monitor support changes
-        * Updated Windows display specifications require Windows 10 version 1803 or later for six monitor support on Horizon 7 version 7.9 and later. See Supported Multiple Monitor Configurations.
-      * [Full Release Notes](https://docs.vmware.com/en/VMware-Horizon-Client-for-Windows/5.1/rn/horizon-client-windows-51-release-notes.html)
+      
+	  The **5.2.0** release of Horizon Client for Windows contains the following new features:
+	  
+      * **Log in as current user feature supported in one-way trust domains**
+      You can use the Log in as current user feature to log in to a Connection Server instance in a domain that is configured to have a one-way trust with the Horizon Client domain without being prompted to reauthenticate.
+      * **Real-Time Audio-Video and scanner redirection supported in nested mode**
+      The Real-Time Audio-Video and scanner redirection features are now supported in nested mode. See VMware Knowledge Base (KB) article 67248, "VMware Horizon Guidelines for Nested Mode."
+      * **Increased display device performance and decreased CPU use**
+      The Lightweight Protocol Client replaces the vmware-remotemks process, increases display device performance, and decreases CPU use.
+      * **Improved 3Dconnexion SpaceMouse performance**
+      Performance is improved when using the 3DConnexion SpaceMouse with the USB redirection feature and the VMware Blast display protocol.
+      * **Display resolution and display scaling customization for remote desktops**
+      You can use Horizon Client to customize the display resolution and display scaling for a remote desktop. See Customize the the Display Resolution and Display Scaling for a Remote Desktop.
+      * **Keyboard shortcuts for input focus**
+      You can use the Hotkey combination to grab input focus and Hotkey combination to release input focus group policy settings to configure keyboard shortcuts for input focus. You can use the Automatic input focus in a virtual desktop window group policy setting to send input to the remote desktop automatically when a user brings the remote desktop to the front. These features are useful for users who cannot use mouse clicks to grab and release a remote desktop. See General Settings for Client GPOs.
+      * **Lock key synchronization**
+      An administrator can synchronize the toggle states of the Num Lock, Scroll Lock, and Caps Lock keys from the client computer to a remote desktop by using the Automatically synchronize the keypad, scroll and caps lock keys group policy setting. See General Settings for Client GPOs. A user can synchronize the toggle states of the Num Lock, Scroll Lock, and Caps Lock keys in the Horizon Client user interface. See Configure Lock Key Synchronization.
+      * **Certificate checking with an SSL proxy server**
+      You can allow certificate checking for secondary connections through an SSL proxy server. This feature applies to Blast Secure Gateway and secure tunnel connections. See Setting the Certificate Checking Mode in Horizon Client. See Setting the Certificate Checking Mode in Horizon Client.
+      * **VMware Blast connections with an SSL proxy server**
+      You can specify whether to allow VMware Blast connections through an SSL proxy server. See Configure VMware Blast Options.
+      * **Drive letter mapping in the client drive redirection feature**
+      An administrator can map drive letters by using the Configure drive letter mapping mode and Define drive letter mapping agent group policy settings. This feature requires Horizon Agent 7.10. See Client Drive Redirection Policy Settings.
+      * **Browser Redirection support**
+      Horizon Client supports the Browser Redirection feature, which is introduced with Horizon Agent 7.10. With Browser Redirection, when a user uses the Google Chrome browser in a remote desktop, the website is rendered in the client system instead of the agent system, and it is displayed over the remote browser's viewport. See Configuring Browser Redirection.
+      * **Multiple webcam and microphone redirection with Real-Time Audio-Video**
+      When you connect to a virtual desktop, the Real-Time Audio-Video feature redirects all the webcams and microphones connected to the client computer to the virtual desktop. This feature requires Horizon Agent 7.10. This feature does not work with published desktops or published applications. See Using Multiple Devices with the Real-Time Audio-Video Feature.
+	  
+      [**Full Release Notes**](https://docs.vmware.com/en/VMware-Horizon-Client-for-Windows/5.2/rn/horizon-client-windows-52-release-notes.html)
     </releaseNotes>
     <dependencies>
   	  <dependency id="vcredist2015" />
