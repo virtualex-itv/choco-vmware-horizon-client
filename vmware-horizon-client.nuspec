@@ -3,14 +3,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vmware-horizon-client</id>
-    <version>5.3.0.15208953</version>
+    <version>5.4.0.15805437</version>
 	<packageSourceUrl>https://github.com/virtualex-itv/choco-vmware-horizon-client/tree/master</packageSourceUrl>
     <owners>virtualex windos medalibi</owners>
     <title>VMware Horizon Client</title>
     <authors>VMware, Inc.</authors>
-    <projectUrl>https://clients.amazonworkspaces.com/</projectUrl>
+    <projectUrl>https://my.vmware.com/web/vmware/info/slug/desktop_end_user_computing/vmware_horizon_clients/5_0/</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/choco-vmware-horizon-client/5859664907bf4c1d30fb71ab4e5a9a831ce9bfea/_icon/ViewClientIcon.png</iconUrl>
-    <copyright>Copyright © 2019 VMware, Inc.  All rights reserved.</copyright>
+    <copyright>Copyright © 2020 VMware, Inc.  All rights reserved.</copyright>
     <licenseUrl>https://www.vmware.com/help/legal.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
 	<docsUrl>https://docs.vmware.com/en/VMware-Horizon-Client/index.html</docsUrl>
@@ -23,20 +23,20 @@
       The **4.6.1** release of Horizon Client for Windows included a new command-line installation property called AUTO_UPDATE_ENABLED. This property determines whether the online update feature is enabled in Horizon Client for Windows. A value of 1 enables the feature. A value of 0 disables the feature.
       ---
       
-	  The **5.3.0** release of Horizon Client for Windows contains the following new features:
+	  The **5.4.0** release of Horizon Client for Windows contains the following new features:
 	  
-	  * **Battery state redirection**
-	  When the Enable Battery State Redirection agent group policy setting is enabled, information about the Windows client system's battery is redirected to a Windows remote desktop. This setting is enabled by default. For more information, see the Configuring Remote Desktop Features in Horizon 7 document.
-	  * **Universal Broker support**
-	  You can use Horizon Client for Windows in a cloud brokering environment.
-	  * **RADIUS authentication login page customization**
-	  Beginning with Horizon 7 version 7.11, an administrator can customize the labels on the RADIUS authentication login page that appears in Horizon Client. For more information, see the topics about two-factor authentication in the VMware Horizon Console Administration document.
-	  * **Save custom display resolution and display scaling settings on the server**
-	  By default, custom display resolution and display scaling settings are stored only on the local client system. An administrator can use the Save resolution and DPI to server client group policy setting to save these settings to the server so that they are always applied, regardless of the client system that you use to log to the remote desktop. For more information, see General Settings for Client GPOs.
-	  * **Windows 10 Version 1909 support**
-	  You can install Horizon Client for Windows on a Windows 10 Version 1909 client system.
+	  * **Two-factor authentication after remote session timeout**
+	  Beginning with Horizon 7 version 7.12, an administrator can configure two-factor authentication to occur after a remote session times out. For more information, see the VMware Horizon Console Administration document.
+	  * **OPSWAT integration support**
+	  You can use OPSWAT integration with Horizon Client for Windows. This feature requires Unified Access Gateway 3.9 or later. For more information, see OPSWAT Integration Requirements.
+	  * **Enhancements to the selective monitor feature for published applications**
+	  You can now select the monitors on which to display published application windows if you have two or more monitors. Previously, this feature required three or more monitors.
+	  * **Enhancements to the Real-Time Audio-Video feature with multiple device redirection**
+	  If a remote desktop supports multiple devices with the Real-Time Audio-Video feature, selecting a specific microphone in Horizon Client (**Settings > Real-Time Audio-Video > Preferred microphone**) redirects only that microphone and the selected preferred webcam to the remote desktop. You can select **All** to redirect all the available microphones and webcams to the remote desktop. For more information, see Select a Preferred Webcam or Microphone on a Windows Client System.
+	  * **Changes to the useExisting URI query and a new group policy setting**
+	  The default value of the useExisting URI query is changed from true to false. In addition, a new client group policy setting, **Use existing client instance when connect to same server**, is added. For more information, see Syntax for Creating vmware-view URIs and Scripting Definition Settings for Client GPOs.
 	  
-      [**Full Release Notes**](https://docs.vmware.com/en/VMware-Horizon-Client-for-Windows/5.3/rn/horizon-client-windows-53-release-notes.html)
+      [**Full Release Notes**](https://docs.vmware.com/en/VMware-Horizon-Client-for-Windows/5.4/rn/horizon-client-windows-54-release-notes.html)
     </releaseNotes>
     <dependencies>
   	  <dependency id="vcredist2015" />
