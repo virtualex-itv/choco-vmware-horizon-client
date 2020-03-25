@@ -12,4 +12,4 @@ Chocolatey package for VMware Horizon Client for Windows
 
 ---
 
-![ChocoTestEnvInstall](https://rawcdn.githack.com/virtualex-itv/choco-vmware-horizon-client/c0b7f13e5b85f1990916a1b82963e29e176931e9/_img/choco-vmw-horizon-test.png)
+![ChocoTestEnvInstall](https://rawcdn.githack.com/virtualex-itv/choco-vmware-horizon-client/e1889e526f97293e0951dc38e8658c88b275fb10/_img/choco-vmw-horizon-test.png)
