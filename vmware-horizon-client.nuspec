@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vmware-horizon-client</id>
-    <version>5.4.1.15897311</version>
+    <version>5.4.2.15936851</version>
 	<packageSourceUrl>https://github.com/virtualex-itv/choco-vmware-horizon-client/tree/master</packageSourceUrl>
     <owners>virtualex windos medalibi</owners>
     <title>VMware Horizon Client</title>
@@ -17,10 +17,17 @@
   <mailingListUrl>https://communities.vmware.com/community/vmtn/horizon/view/client_for_windows</mailingListUrl>
     <tags>vmware horizon view client virtual-machine vdi admin</tags>
     <summary>Client application used to connect to virtual desktops from Windows desktop computers.</summary>
-    <description>VMware Horizon Client for Windows makes it easy to access your Windows virtual desktop with the best possible user experience on the Local Area Network (LAN) or across a Wide Area Network (WAN). Support for Windows 10, Windows 8 and 8.1 (with Updates), and Windows 7.</description>
+    <description>VMware Horizon Client for Windows makes it easy to access your Windows virtual desktop with the best possible user experience on the Local Area Network (LAN) or across a Wide Area Network (WAN). Support for Windows 10, Windows 8 and 8.1 (with Updates), and Windows 7.
+	
+	Please see the [**README**](https://github.com/virtualex-itv/choco-vmware-horizon-client) for chocolatey-test-environment installation.</description>
     <releaseNotes>
       
-      The **5.4.1** release of Horizon Client for Windows contains the following changes:
+      The **5.4.2** release of Horizon Client for Windows contains the following changes:
+	  
+	  * Fixes a performance issue with the color fidelity setting 4:4:4.
+	  * Fixes a scrolling issue with dual monitors
+	  ---
+	  The **5.4.1** release of Horizon Client for Windows contains the following changes:
 	  
 	  * Fixes an issue that blocks connections to older versions of Unified Access Gateway. This issue is specific to Horizon Client for Windows installations that use the dual IPv4/IPv6 setting.
 	  * Fixes an issue with SAML authentication when Workspace ONE mode is enabled on the Connection Server instance.
@@ -39,7 +46,7 @@
 	  * **Changes to the useExisting URI query and a new group policy setting**
 	  The default value of the useExisting URI query is changed from true to false. In addition, a new client group policy setting, **Use existing client instance when connect to same server**, is added. For more information, see Syntax for Creating vmware-view URIs and Scripting Definition Settings for Client GPOs.
 	  
-      [**Full Release Notes**](https://docs.vmware.com/en/VMware-Horizon-Client-for-Windows/5.4.1/rn/horizon-client-windows-541-release-notes.html)
+      [**Full Release Notes**](https://docs.vmware.com/en/VMware-Horizon-Client-for-Windows/5.4.2/rn/horizon-client-windows-542-release-notes.html)
 	  ---
 	  
 	  **Note:**
