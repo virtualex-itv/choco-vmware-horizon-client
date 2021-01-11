@@ -3,14 +3,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>vmware-horizon-client</id>
-    <version>8.0.0.16531419</version>
+    <version>8.1.0.17349995</version>
 	<packageSourceUrl>https://github.com/virtualex-itv/choco-vmware-horizon-client/tree/master</packageSourceUrl>
     <owners>virtualex windos medalibi</owners>
     <title>VMware Horizon Client for Windows</title>
     <authors>VMware, Inc.</authors>
-    <projectUrl>https://my.vmware.com/web/vmware/downloads/info/slug/desktop_end_user_computing/vmware_horizon_clients/2006</projectUrl>
+    <projectUrl>https://my.vmware.com/en/web/vmware/downloads/info/slug/desktop_end_user_computing/vmware_horizon_clients/horizon_8</projectUrl>
     <iconUrl>https://rawcdn.githack.com/virtualex-itv/choco-vmware-horizon-client/ce63053058a5612f6a6821c9af1c7d8948ae2b57/_icon/ViewClientIcon.png</iconUrl>
-    <copyright>Copyright © 2020 VMware, Inc.  All rights reserved.</copyright>
+    <copyright>Copyright © 2021 VMware, Inc.  All rights reserved.</copyright>
     <licenseUrl>https://www.vmware.com/help/legal.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
 	<docsUrl>https://docs.vmware.com/en/VMware-Horizon-Client/index.html</docsUrl>
@@ -22,20 +22,28 @@
 	Please see the [**README**](https://github.com/virtualex-itv/choco-vmware-horizon-client) for chocolatey-test-environment installation.</description>
     <releaseNotes>
       
-      The **8.0.0** release of Horizon Client for Windows 2006 contains the following new features:
+      The **8.1.0** release of Horizon Client for Windows 2012 includes the following new features:
 	  
-	  * **Configure the maximum latency for mouse coalescing**
-	  The **Configure maximum latency for mouse coalescing** group policy setting enables you to configure the maximum latency allowed, in milliseconds, when coalescing mouse movement events. See General Settings for Client GPOs.
-      * **Windows 10 2004 support**
-	  You can install Horizon Client for Windows on a Windows 10 2004 client system.You can install Horizon Client for Windows on a Windows 10 2004 client system.
-	  * **Client version restriction**
-	  A warning message appears in Horizon Client if you try to connect to a server that does not support your Horizon Client version. For information about setting up client version restrictions, see Global Client Restriction Settings for Client Sessions.
-	  * **Certificate revocation changes**
-	  When the **Ignore certificate revocation problems** group policy setting is enabled, the client might only use a cached URL during server certificate verification. Horizon Client now passes additional certificate flags to handle time outs.
-	  * **Video support in Media Optimization for Microsoft Teams**
-	  Both audio and video are supported. Previously, only audio was supported. This feature requires Horizon Agent 2006. To use this feature, the **Enable Media Optimization for Microsoft Teams** option must be selected during Horizon Client for Windows installation. See Install Horizon Client for Windows.
+	  * **Using encrypted USB thumb drives with the client drive redirection feature**
+	  See [Share Local Folders and Drives](https://docs.vmware.com/en/VMware-Horizon-Client-for-Windows/2012/horizon-client-windows-installation/GUID-CFB7E9B1-63E0-418A-8814-572296507783.html)
+      * **Generating log files for remote desktop features**
+	  You can set log levels and generate log files in a Data Collection Tool (DCT) bundle for remote desktop features. See [Collecting Logs for Remote Desktop Features and Components](https://docs.vmware.com/en/VMware-Horizon/2012/horizon-console-administration/GUID-476A5C9B-57E6-4F97-BDAF-E931E4474053.html).
+	  * **Customizing the USB forwarding list**
+	  You can use the Exclude Automatically Connection Device Family and Exclude Automatically Connection Vid/Pid Device client or agent group policy settings to filter the USB devices that are forwarded automatically. For the client group policy settings, see [USB Settings for GPOs](https://docs.vmware.com/en/VMware-Horizon-Client-for-Windows/2012/horizon-client-windows-installation/GUID-C66E616A-2702-46A7-8E22-EF09E7470091.html). For the agent group policy settings, see [USB Settings in the Horizon Agent Configuration ADMX Template](https://docs.vmware.com/en/VMware-Horizon/2012/horizon-remote-desktop-features/GUID-433CDB2E-6A71-4A1A-9B05-02B65CC53205.html). This feature requires Horizon Agent 2012.
+	  * **Copying and pasting files and folders**
+	  You can copy and paste files and folders between the client system and remote desktops and published applications. See [Copying and Pasting Files and Folders](https://docs.vmware.com/en/VMware-Horizon-Client-for-Windows/2012/horizon-client-windows-user/GUID-37D7DE28-8327-4A4A-B265-22943AC69A94.html).
+	  * **Client drive redirection dependency changes**
+	  The drag and drop, file association, and file copy and paste features are no longer dependent on the client drive redirection feature being enabled.
+	  * **DPI synchronization enhancements**
+	  The client's per-monitor DPI setting is synchronized to the agent and changes take effect immediately during a remote session by default. This feature is controlled by the **DPI Synchronization Per Monitor** agent group policy setting. This feature requires Horizon Agent 2012. Horizon Client for Windows 2012 does not support the DPI Synchronization Per Connection feature in earlier Horizon Agent releases. See [Using DPI Synchronization](https://docs.vmware.com/en/VMware-Horizon-Client-for-Windows/2012/horizon-client-windows-installation/GUID-7590B343-8ECF-450A-9245-0E30D8BE0633.html).
+	  * **Customizing the Horizon Client for Windows online update feature**
+	  You can use the **Allow user to skip Horizon Client update, Automatically check for updates, and Update message pop-up** group policy settings to customize the Horizon Client for Windows online update feature. See [General Settings for Client GPOs](https://docs.vmware.com/en/VMware-Horizon-Client-for-Windows/2012/horizon-client-windows-installation/GUID-81B739A0-51BA-4BFF-AA26-90BEAD0AEC0D.html).
+	  * **Setting a preferred speaker**
+	  If you have multiple speakers on your client system, you can specify which speaker is preferred in a remote desktop. This feature requires Horizon Agent 2012. See [Select a Preferred Speaker for a Remote Desktop](https://docs.vmware.com/en/VMware-Horizon-Client-for-Windows/2012/horizon-client-windows-installation/GUID-AAF48996-7B38-496C-A7AB-652FA007055E.html).
+	  * **Windows 10 2009 support**
+	  You can install Horizon Client for Windows on a Windows 10 2009 client system.
 	  
-      [**Full Release Notes**](https://docs.vmware.com/en/VMware-Horizon-Client-for-Windows/2006/rn/horizon-client-windows-2006-release-notes.html)
+      [**Full Release Notes**](https://docs.vmware.com/en/VMware-Horizon-Client-for-Windows/2012/rn/horizon-client-windows-2012-release-notes.html)
 	  ---
 	  
 	  **Note:**
